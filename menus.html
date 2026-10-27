@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menus | Smokehouse Republic</title>
+<meta name="description" content="Smokehouse Republic menus by location: Republic Cantina at Village Creek Brewery Co., The Restaurant in Fort Worth, and the Stadium Food Stand at Cleburne Railroaders Stadium.">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo-wrap">
+      <img src="assets/logo.png" alt="Smokehouse Republic" class="logo">
+    </a>
+    <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#coming-soon">Coming Soon</a></li>
+        <li><a href="menus.html" aria-current="page">Menu</a></li>
+        <li><a href="index.html#story">Our Story</a></li>
+        <li><a href="index.html#gallery">Gallery</a></li>
+        <li><a href="index.html#visit">Hours &amp; Location</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="menu menus-page">
+  <div class="container">
+    <p class="section-eyebrow center">Menus</p>
+    <h2 class="center">Pick Your Spot</h2>
+
+    <nav class="menu-jump" aria-label="Menus by location">
+      <a href="#cantina" class="btn btn-primary">Cantina</a>
+      <a href="#restaurant" class="btn btn-outline">The Restaurant</a>
+      <a href="#stadium" class="btn btn-outline">Stadium Food Stand</a>
+    </nav>
+
+    <!-- One <section class="location-menu"> per location. To add a menu, replace that location's "menu-soon" line with menu-category blocks like the Cantina's. -->
+
+    <section id="cantina" class="location-menu">
+      <p class="section-eyebrow center">Wood-Fired Tex-Mex</p>
+      <h3 class="location-title center">Republic Cantina</h3>
+      <p class="location-meta center">Same smoke. Different flavor. &middot; Village Creek Brewery Co., Rendon, TX</p>
+
+      <div class="menu-category">
+        <h3>Tacos</h3>
+        <p class="menu-desc">Three tacos, choice of protein</p>
+        <ul class="menu-list">
+          <li><span class="item-name">Brisket</span><span class="item-dots"></span><span class="item-price">$11.00</span></li>
+          <li><span class="item-name">Beef Cheek</span><span class="item-dots"></span><span class="item-price">$10.00</span></li>
+          <li><span class="item-name">Pulled Pork</span><span class="item-dots"></span><span class="item-price">$8.00</span></li>
+          <li><span class="item-name">Smoked Chicken</span><span class="item-dots"></span><span class="item-price">$9.00</span></li>
+        </ul>
+      </div>
+
+      <div class="menu-category">
+        <h3>Nachos</h3>
+        <p class="menu-desc">Tortilla chips, queso and choice of protein</p>
+        <ul class="menu-list">
+          <li><span class="item-name">Brisket</span><span class="item-dots"></span><span class="item-price">$14.00</span></li>
+          <li><span class="item-name">Beef Cheek</span><span class="item-dots"></span><span class="item-price">$12.00</span></li>
+          <li><span class="item-name">Pulled Pork</span><span class="item-dots"></span><span class="item-price">$12.00</span></li>
+          <li><span class="item-name">Smoked Chicken</span><span class="item-dots"></span><span class="item-price">$14.00</span></li>
+        </ul>
+      </div>
+
+      <div class="menu-category">
+        <h3>Quesadilla</h3>
+        <p class="menu-desc">Griddled flour tortilla with melted cheese and choice of protein</p>
+        <ul class="menu-list">
+          <li><span class="item-name">Brisket</span><span class="item-dots"></span><span class="item-price">$12.00</span></li>
+          <li><span class="item-name">Beef Cheek</span><span class="item-dots"></span><span class="item-price">$10.00</span></li>
+          <li><span class="item-name">Pulled Pork</span><span class="item-dots"></span><span class="item-price">$8.00</span></li>
+          <li><span class="item-name">Smoked Chicken</span><span class="item-dots"></span><span class="item-price">$9.00</span></li>
+        </ul>
+      </div>
+
+      <p class="menu-plate"><strong>Make it a plate +$6</strong> &middot; Tacos, nachos or quesadilla, with Mexican rice &amp; refried black beans</p>
+
+      <div class="menu-category">
+        <h3>Starters</h3>
+        <ul class="menu-list">
+          <li><span class="item-name">Queso &amp; Guacamole Duo</span><span class="item-dots"></span><span class="item-price">$13.00</span></li>
+        </ul>
+      </div>
+
+      <div class="menu-category">
+        <h3>Sides</h3>
+        <ul class="menu-list">
+          <li><span class="item-name">Mexican Rice</span><span class="item-dots"></span><span class="item-price">$5.00</span></li>
+          <li><span class="item-name">Refried Black Beans</span><span class="item-dots"></span><span class="item-price">$5.00</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="restaurant" class="location-menu">
+      <p class="section-eyebrow center">Fort Worth, TX</p>
+      <h3 class="location-title center">The Restaurant</h3>
+      <p class="location-meta center">6879 Rendon Bloodworth Rd, Suite 612 &middot; Opening Late November 2026</p>
+      <p class="menu-soon center">Menu coming soon</p>
+    </section>
+
+    <section id="stadium" class="location-menu">
+      <p class="section-eyebrow center">Cleburne Railroaders Stadium</p>
+      <h3 class="location-title center">Stadium Food Stand</h3>
+      <p class="location-meta center">1906 Brazzle Blvd, Cleburne, TX &middot; Opening March 1, 2027</p>
+      <p class="menu-soon center">Menu coming soon</p>
+    </section>
+
+    <p class="menu-note">Menus and pricing subject to change.</p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <img src="assets/logo.png" alt="Smokehouse Republic" class="footer-logo">
+    <p>&copy; <span id="year"></span> Smokehouse Republic. Texas BBQ &amp; Smashburgers.</p>
+    <p class="footer-address">Village Creek Brewery Co. &middot; Rendon, TX &middot; (817) 368-9945</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

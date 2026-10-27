@@ -99,16 +99,6 @@ const startCountdowns = () => {
 
 startCountdowns();
 
-// Location menu pop-ups: a button with data-open-menu="<dialog id>" opens that menu; the ×, Esc, or a click outside closes it.
-document.querySelectorAll('[data-open-menu]').forEach(button => {
-  const dialog = document.getElementById(button.dataset.openMenu);
-  button.addEventListener('click', () => dialog.showModal());
-  dialog.querySelector('[data-close-menu]').addEventListener('click', () => dialog.close());
-  dialog.addEventListener('click', (event) => {
-    if (event.target === dialog) dialog.close();
-  });
-});
-
 // Social icon buttons: only platforms with a URL above get an icon; with none set, the Follow strip stays hidden.
 // On the mock only (see onMock), platforms without a URL show a stand-in link to that platform's front page so the icons can be seen.
 const MOCK_SAMPLE_SOCIALS = {
@@ -134,7 +124,8 @@ const startSocials = () => {
       return link;
     }));
   });
-  document.getElementById('follow').hidden = names.length === 0;
+  const follow = document.getElementById('follow');
+  if (follow) follow.hidden = names.length === 0;
 };
 
 startSocials();
