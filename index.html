@@ -24,6 +24,7 @@
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links" id="navLinks">
+        <li><a href="#coming-soon">Coming Soon</a></li>
         <li><a href="#menu">Menu</a></li>
         <li><a href="#story">Our Story</a></li>
         <li><a href="#gallery">Gallery</a></li>
@@ -51,6 +52,14 @@
   </div>
 </section>
 
+<section id="follow" class="follow" hidden>
+  <div class="container">
+    <p class="section-eyebrow center">Follow Along</p>
+    <h2 class="center">Follow the Smokehouse</h2>
+    <div class="social-links follow-social" data-social-links></div>
+  </div>
+</section>
+
 <section class="feature-strip">
   <div class="container feature-grid">
     <div class="feature">
@@ -67,6 +76,115 @@
     </div>
   </div>
 </section>
+
+<section id="coming-soon" class="coming-soon">
+  <div class="container">
+    <p class="section-eyebrow center">Coming Soon</p>
+    <h2 class="center">More Smokehouse Republic on the Way</h2>
+    <div class="soon-grid">
+      <article class="soon-card" data-location="restaurant">
+        <h3>The Restaurant</h3>
+        <p class="soon-place">Rendon, TX</p>
+        <p class="soon-address">6879 Rendon Bloodworth Rd, Suite 612<br>Fort Worth, TX 76140</p>
+        <div class="countdown" role="timer" hidden>
+          <div class="count-unit"><span class="count-num" data-unit="days">0</span><span class="count-label">Days</span></div>
+          <div class="count-unit"><span class="count-num" data-unit="hours">00</span><span class="count-label">Hours</span></div>
+          <div class="count-unit"><span class="count-num" data-unit="minutes">00</span><span class="count-label">Min</span></div>
+          <div class="count-unit"><span class="count-num" data-unit="seconds">00</span><span class="count-label">Sec</span></div>
+        </div>
+        <p class="soon-status">Opening Late November 2026</p>
+        <div class="soon-actions">
+          <a href="https://www.google.com/maps/search/?api=1&query=6879+Rendon+Bloodworth+Rd+Suite+612%2C+Fort+Worth%2C+TX+76140" target="_blank" rel="noopener" class="btn btn-outline">Get Directions</a>
+        </div>
+      </article>
+      <article class="soon-card" data-location="stadium">
+        <h3>Stadium Food Stand</h3>
+        <p class="soon-place">Cleburne Railroaders Stadium</p>
+        <p class="soon-address">1906 Brazzle Blvd<br>Cleburne, TX 76033</p>
+        <div class="countdown" role="timer" hidden>
+          <div class="count-unit"><span class="count-num" data-unit="days">0</span><span class="count-label">Days</span></div>
+          <div class="count-unit"><span class="count-num" data-unit="hours">00</span><span class="count-label">Hours</span></div>
+          <div class="count-unit"><span class="count-num" data-unit="minutes">00</span><span class="count-label">Min</span></div>
+          <div class="count-unit"><span class="count-num" data-unit="seconds">00</span><span class="count-label">Sec</span></div>
+        </div>
+        <p class="soon-status">Opening March 1, 2027</p>
+        <div class="soon-actions">
+          <a href="https://railroaderbaseball.com/" target="_blank" rel="noopener" class="btn btn-primary">Railroaders Website</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Cleburne+Railroaders+Stadium%2C+1906+Brazzle+Blvd%2C+Cleburne%2C+TX+76033" target="_blank" rel="noopener" class="btn btn-outline">Get Directions</a>
+        </div>
+      </article>
+      <article class="soon-card is-open" data-location="cantina">
+        <h3>Smokehouse Republic Cantina</h3>
+        <p class="soon-place">Village Creek Brewery Co.</p>
+        <p class="soon-address">6690 Levy County Line Road<br>Rendon, TX 76028</p>
+        <p class="soon-status">Now Serving</p>
+        <div class="soon-actions">
+          <button type="button" class="btn btn-primary" data-open-menu="cantinaMenu">View Menu</button>
+          <a href="https://www.google.com/maps/search/?api=1&query=Village+Creek+Brewery+Co.%2C+6690+Levy+County+Line+Road%2C+Rendon%2C+TX+76028" target="_blank" rel="noopener" class="btn btn-outline">Get Directions</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<dialog id="cantinaMenu" class="menu-dialog" aria-labelledby="cantinaMenuTitle">
+  <button type="button" class="menu-dialog-close" aria-label="Close menu" data-close-menu>&times;</button>
+  <p class="section-eyebrow center">Wood-Fired Tex-Mex</p>
+  <h2 id="cantinaMenuTitle" class="center">Republic Cantina</h2>
+  <p class="menu-dialog-tagline center">Same smoke. Different flavor.</p>
+
+  <div class="menu-category">
+    <h3>Tacos</h3>
+    <p class="menu-desc">Three tacos, choice of protein</p>
+    <ul class="menu-list">
+      <li><span class="item-name">Brisket</span><span class="item-dots"></span><span class="item-price">$11.00</span></li>
+      <li><span class="item-name">Beef Cheek</span><span class="item-dots"></span><span class="item-price">$10.00</span></li>
+      <li><span class="item-name">Pulled Pork</span><span class="item-dots"></span><span class="item-price">$8.00</span></li>
+      <li><span class="item-name">Smoked Chicken</span><span class="item-dots"></span><span class="item-price">$9.00</span></li>
+    </ul>
+  </div>
+
+  <div class="menu-category">
+    <h3>Nachos</h3>
+    <p class="menu-desc">Tortilla chips, queso and choice of protein</p>
+    <ul class="menu-list">
+      <li><span class="item-name">Brisket</span><span class="item-dots"></span><span class="item-price">$14.00</span></li>
+      <li><span class="item-name">Beef Cheek</span><span class="item-dots"></span><span class="item-price">$12.00</span></li>
+      <li><span class="item-name">Pulled Pork</span><span class="item-dots"></span><span class="item-price">$12.00</span></li>
+      <li><span class="item-name">Smoked Chicken</span><span class="item-dots"></span><span class="item-price">$14.00</span></li>
+    </ul>
+  </div>
+
+  <div class="menu-category">
+    <h3>Quesadilla</h3>
+    <p class="menu-desc">Griddled flour tortilla with melted cheese and choice of protein</p>
+    <ul class="menu-list">
+      <li><span class="item-name">Brisket</span><span class="item-dots"></span><span class="item-price">$12.00</span></li>
+      <li><span class="item-name">Beef Cheek</span><span class="item-dots"></span><span class="item-price">$10.00</span></li>
+      <li><span class="item-name">Pulled Pork</span><span class="item-dots"></span><span class="item-price">$8.00</span></li>
+      <li><span class="item-name">Smoked Chicken</span><span class="item-dots"></span><span class="item-price">$9.00</span></li>
+    </ul>
+  </div>
+
+  <p class="menu-plate"><strong>Make it a plate +$6</strong> &middot; Tacos, nachos or quesadilla, with Mexican rice &amp; refried black beans</p>
+
+  <div class="menu-category">
+    <h3>Starters</h3>
+    <ul class="menu-list">
+      <li><span class="item-name">Queso &amp; Guacamole Duo</span><span class="item-dots"></span><span class="item-price">$13.00</span></li>
+    </ul>
+  </div>
+
+  <div class="menu-category">
+    <h3>Sides</h3>
+    <ul class="menu-list">
+      <li><span class="item-name">Mexican Rice</span><span class="item-dots"></span><span class="item-price">$5.00</span></li>
+      <li><span class="item-name">Refried Black Beans</span><span class="item-dots"></span><span class="item-price">$5.00</span></li>
+    </ul>
+  </div>
+
+  <p class="menu-note">Menu and pricing subject to change.</p>
+</dialog>
 
 <section id="story" class="story">
   <div class="container story-inner">
