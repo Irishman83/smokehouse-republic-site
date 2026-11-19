@@ -1,8 +1,9 @@
 // Opening dates for the "Coming Soon" countdowns, in Central time: 'YYYY-MM-DD HH:MM' (24-hour).
+// Use 00:00 when only the day is known; the card then shows the date without a time.
 // Leave a location as null until its date is confirmed; its card then shows the estimate written in index.html.
 const OPENINGS = {
-  restaurant: null,
-  stadium: null
+  restaurant: '2026-12-09 00:00',
+  stadium: '2027-05-01 00:00'
 };
 
 // Social pages for the icon buttons: paste each full page URL. Leave null to hide that icon.
@@ -70,9 +71,11 @@ const startCountdowns = () => {
     const status = card.querySelector('.soon-status');
     const unit = (name) => clock.querySelector(`[data-unit="${name}"]`);
     const pad = (n) => String(n).padStart(2, '0');
-    const opensAt = new Intl.DateTimeFormat('en-US', {
-      timeZone: CENTRAL, weekday: 'long', month: 'long', day: 'numeric', hour: 'numeric', minute: '2-digit'
-    }).format(target);
+    const dayOnly = real && stamp.endsWith(' 00:00');
+    const opensAt = new Intl.DateTimeFormat('en-US', dayOnly
+      ? { timeZone: CENTRAL, weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' }
+      : { timeZone: CENTRAL, weekday: 'long', month: 'long', day: 'numeric', hour: 'numeric', minute: '2-digit' }
+    ).format(target);
 
     let timer;
     const tick = () => {
@@ -91,7 +94,7 @@ const startCountdowns = () => {
     };
 
     clock.hidden = false;
-    status.textContent = `Opens ${opensAt} CT${real ? '' : ' (sample date)'}`;
+    status.textContent = dayOnly ? `Opens ${opensAt}` : `Opens ${opensAt} CT${real ? '' : ' (sample date)'}`;
     tick();
     timer = setInterval(tick, 1000);
   });
